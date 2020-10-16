@@ -4,13 +4,13 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 
 class Place {
-  const Place({
+  const Place(
     this.streetNumber,
     this.street,
     this.city,
     this.state,
     this.zipCode,
-  });
+  );
 
   final String streetNumber;
   final String street;
@@ -104,14 +104,7 @@ class PlaceApiProvider {
             zipCode = component['long_name'];
           }
         }
-        return Place(
-          street: street,
-          streetNumber:
-          streetNumber,
-          city: city,
-          state:state,
-          zipCode: zipCode
-        );
+        return Place(street, streetNumber, city, state, zipCode);
       }
       throw Exception(result['error_message']);
     } else {
