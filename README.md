@@ -1,2 +1,2 @@
-# Location Search Autocomplete Experiment
+## Location Search Autocomplete Experiment
 ![](place_autocomplete_demo.gif)
